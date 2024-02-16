@@ -1,0 +1,205 @@
+body {
+  background: #a4a4a4;
+  overflow-x: hidden;
+}
+
+.model-btn {
+  margin-bottom: 20px;
+  font-size: 50px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+}
+
+.outer-container {
+  padding: 20px 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-container {
+  background-color: black;
+  width: 800px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  padding: 10px;
+  background-image: linear-gradient(to right, #695097, #485081);
+  height: 100px;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 52px;
+  color: white;
+  font-size: 30px;
+}
+
+.upper-part {
+  background-color: black;
+  width: 90%;
+  height: 80px;
+  margin-top: 30px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 15px white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 35px 10px;
+}
+
+input {
+  /* border: none; */
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-color: #485081;
+  width: 60%;
+  font-size: 15px;
+  outline: none;
+  background-color: transparent;
+  color: white;
+}
+
+.add {
+  background-color: tomato;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  width: 130px;
+  height: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+  box-shadow: 1px 1px 6px tomato;
+}
+
+.add:hover {
+  box-shadow: 1px 1px 15px tomato;
+}
+
+.todos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.down-part {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  background-color: blck;
+  box-shadow: 1px 1px 10px white;
+  border-radius: 5px;
+  color: white;
+}
+
+.down-part h4 {
+  padding: 0 10px;
+}
+
+tr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+.value,
+.check {
+  width: calc(100% / 3);
+}
+
+.check {
+  margin-right: 60px;
+}
+
+.done-btn {
+  width: 70px;
+
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, #695097, #485081);
+  color: white;
+  cursor: pointer;
+}
+
+.done-btn:hover {
+  opacity: 0.9;
+}
+
+.thead {
+  background-color: rgba(128, 128, 128, 0.249);
+  padding: 7px;
+}
+
+.sub-title {
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub-title h6 {
+  color: #695097;
+  cursor: pointer;
+}
+
+tr:hover {
+  background-color: rgba(139, 69, 19, 0.486);
+  cursor: pointer;
+}
+
+.end {
+  height: 80px;
+}
+
+@media (max-width: 880px) {
+  .inner-container {
+    width: 600px;
+  }
+}
+
+@media (max-width: 680px) {
+  .inner-container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 560px) {
+  .inner-container {
+    width: 400px;
+  }
+}
+
+@media (max-width: 450px) {
+  .model-btn {
+    margin-right: 30px;
+    text-align: right;
+  }
+  .inner-container {
+    width: 90%;
+  }
+}
